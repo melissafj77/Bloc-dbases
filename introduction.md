@@ -66,7 +66,7 @@ The email and sign-up date for the user named DeAndre Data.
 ```
 SELECT email, signup
 FROM users
-Where name = 'DeAndre Data
+Where name = 'DeAndre Data';
 ```
 
 The user ID for the user with email 'aleesia.algorithm@uw.edu'.
@@ -74,7 +74,7 @@ The user ID for the user with email 'aleesia.algorithm@uw.edu'.
 ```
 SELECT userid
 FROM users
-WHERE email = 'aleesia.algorithm@uw.edu'
+WHERE email = 'aleesia.algorithm@uw.edu';
 ```
 
 All the columns for the user ID equal to 4.
@@ -82,5 +82,5 @@ All the columns for the user ID equal to 4.
 ```
 SELECT *
 FROM users
-WHERE userid = '4'
+WHERE userid = 4;
 ```
