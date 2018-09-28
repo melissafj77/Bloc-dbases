@@ -41,10 +41,11 @@
 
      SELECT date, amount
      FROM payments;
-```
-        A: The date and ammounts of all payments.
----
 
+```
+     A: The date and ammounts of all payments.
+
+---
 
 | date                     | amount    |
 | ------------------------ | --------- |
@@ -58,14 +59,37 @@
      SELECT amount
      FROM payments
      WHERE amount > 500;
+```
+   
+     A: All the payments where the amount is less than 500.
 
-        A: All the payments where the amount is less than 500.
+---
+
+| amount    |
+| --------- |
+| 1500.0000 |
+
+---
+
+```
 
      SELECT *
      FROM payments
      WHERE payee = 'Mega Foods';
 
+```
         A: All the columns from the payments table where the payee is Mega Foods.
+
+        
+---
+
+| date                     | payee      | amount   | memo      |
+| ------------------------ | ---------- | -------- | --------- |
+| 2016-05-15T00:00:00.000Z | Mega Foods | 124.9300 | Groceries |
+
+---
+
+        
 ```
 
 >8.Given this users table, write SQL queries using the following criteria and include the output:
@@ -77,6 +101,14 @@ The email and sign-up date for the user named DeAndre Data.
 SELECT email, signup
 FROM users
 Where name = 'DeAndre Data';
+
+---
+
+| email             | signup                   |
+| ----------------- | ------------------------ |
+| datad@comcast.net | 2008-01-20T00:00:00.000Z |
+
+---
 ```
 
 The user ID for the user with email 'aleesia.algorithm@uw.edu'.
@@ -85,12 +117,31 @@ The user ID for the user with email 'aleesia.algorithm@uw.edu'.
 SELECT userid
 FROM users
 WHERE email = 'aleesia.algorithm@uw.edu';
+
+---
+
+| userid |
+| ------ |
+| 1      |
+
+---
 ```
 
 All the columns for the user ID equal to 4.
 
 ```
-SELECT *
-FROM users
-WHERE userid = 4;
+A:
+    SELECT *
+    FROM users
+    WHERE userid = 4;
+
+---
+
+| userid | name           | email             | signup                   |
+| ------ | -------------- | ----------------- | ------------------------ |
+| 4      | Brandy Boolean | bboolean@nasa.gov | 1999-10-15T00:00:00.000Z |
+
+---
+
+
 ```
