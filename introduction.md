@@ -39,12 +39,22 @@
 
 >7.Given this payments table, provide an English description of the following queries and include their results:
 
-```
      SELECT date, amount
      FROM payments;
-
+```
         A: The date and ammounts of all payments.
+---
 
+
+| date                     | amount    |
+| ------------------------ | --------- |
+| 2016-05-01T00:00:00.000Z | 1500.0000 |
+| 2016-05-10T00:00:00.000Z | 37.0000   |
+| 2016-05-15T00:00:00.000Z | 124.9300  |
+| 2016-05-23T00:00:00.000Z | 54.7200   |
+
+---
+```
      SELECT amount
      FROM payments
      WHERE amount > 500;
